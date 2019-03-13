@@ -55,7 +55,7 @@ class DefaultLayout extends Component {
             <Container fluid>
               <Suspense fallback={this.loading()}>
                 <Switch>
-                  {routes.map((route, idx) => {
+                  {/* {routes.map((route, idx) => {
                     return route.component ? (
                       <Route
                         key={idx}
@@ -67,7 +67,7 @@ class DefaultLayout extends Component {
                         )}
                          />
                     ) : (null);
-                  })}
+                  })} */}
                   <Redirect from="/" to="/dashboard" />
                 </Switch>
               </Suspense>
