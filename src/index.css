@@ -1,1 +1,10 @@
 
+.primary-color {
+  background: #13CDE3;
+  color: #fff;
+}
+
+.defaultHeader {
+  width: 100%;
+  height: 100%;
+}

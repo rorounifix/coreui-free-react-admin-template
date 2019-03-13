@@ -37,7 +37,7 @@ class DefaultLayout extends Component {
       <div className="app">
         <AppHeader fixed>
           <Suspense  fallback={this.loading()}>
-            <DefaultHeader onLogout={e=>this.signOut(e)}/>
+            <DefaultHeader className='primary-color' onLogout={e=>this.signOut(e)}/>
           </Suspense>
         </AppHeader>
         <div className="app-body">
@@ -64,7 +64,8 @@ class DefaultLayout extends Component {
                         name={route.name}
                         render={props => (
                           <route.component {...props} />
-                        )} />
+                        )}
+                         />
                     ) : (null);
                   })}
                   <Redirect from="/" to="/dashboard" />
